@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
+This project was made using a YouTube Tutorial - https://youtu.be/akUcKvEsG8w
+
+I used SCSS for the first time and Devstackr explained it very nicely.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

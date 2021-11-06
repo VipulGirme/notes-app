@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NotesService } from 'src/app/services/notes.service';
 import { Note } from 'src/app/shared/note.module';
 
@@ -10,10 +11,13 @@ import { Note } from 'src/app/shared/note.module';
 export class NotesListComponent implements OnInit {
 
   notes: Note[] = new Array<Note>();
-  constructor(private notesService : NotesService) { }
+  constructor(private notesService : NotesService,private router: Router) { }
 
   ngOnInit(): void {
     this.notes = this.notesService.getAll();
   }
 
+  deleteNote(id: number){
+    this.notesService.delete(id);
+  }
 }

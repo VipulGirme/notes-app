@@ -20,4 +20,5 @@ export class NotesListComponent implements OnInit {
   deleteNote(id: number){
     this.notesService.delete(id);
   }
+  //Master
 }
